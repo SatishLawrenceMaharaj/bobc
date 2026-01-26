@@ -37,7 +37,7 @@ export default function SermonGallery() {
           Download PowerPoint presentations from our Sunday services and special ministry events. These presentations include the key teachings, scripture references, and discussion points from each sermon.
         </p>
         <p className="text-gray-700">
-          If you have any questions about the content or would like to request a specific sermon, please feel free to contact us through our website.
+          If you have any questions about the content or would like to request a specific sermon, please feel free to contact us.
         </p>
       </div>
     </div>
