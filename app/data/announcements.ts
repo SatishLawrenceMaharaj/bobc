@@ -30,33 +30,49 @@ export const announcements: Announcement[] = [
   {
     id: 1,
     title: "Sunday Service This Week",
-    date: "January 26, 2025",
+    date: "2026",
     content:
       "Join us this Sunday at 8:00 AM for a powerful message. Kid's church also available for your children from 8:30 AM.",
     priority: "high",
   },
   {
     id: 2,
-    title: "Wednesday Night Bible Study",
-    date: "January 29, 2025",
+    title: "Youth Carnival Camp 2026",
+    date: "February 16, 2026",
     content:
-      "We continue our study of the Book of Romans. Join us at 7:00 PM in the fellowship hall. All ages welcome!",
-    priority: "medium",
+      "Join us for a fun-filled youth carnival camp!",
+    priority: "high",
   },
   {
     id: 3,
-    title: "Youth Group Activity",
-    date: "February 1, 2025",
+    title: "Valentines Day Dinner",
+    date: "February 14, 2026",
     content:
-      "The youth group is organizing a community cleanup day. Meet at 8:00 AM at the church parking lot. Supplies provided.",
-    priority: "medium",
+      "Celebrate love and fellowship at our Valentine's Dinner.",
+    priority: "high",
   },
   {
     id: 4,
-    title: "New Member Welcome",
-    date: "February 2, 2025",
+    title: "Prayer and Fasting on every Wednesday",
+    date: "2026",
     content:
-      "We're excited to welcome our new members! Please join us for a special welcome reception after Sunday service.",
+      "Join us for prayer and fasting on every Wednesday.",
+    priority: "medium",
+  },
+  {
+    id: 5,
+    title: "Baptism Day",
+    date: "March 15th, 2026",
+    content:
+      "I say to you that likewise there will be more joy in heaven over one sinner who repents than over ninety-nine just persons who need no repentance. - Luke 15:7. If you feel led to take this important step in your walk with God, please contact us.",
+    priority: "low",
+  },
+  {
+    id: 6,
+    title: "Regional Sports Day",
+    date: "March 30th, 2026",
+    content:
+      "Join us for a day of fun and fellowship.",
     priority: "low",
   },
 ];

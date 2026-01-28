@@ -23,12 +23,6 @@ export default function AnnouncementCard({
     >
       <div className="flex justify-between items-start mb-3">
         <h3 className="text-2xl font-bold text-gray-800">{announcement.title}</h3>
-        <span
-          className={`px-3 py-1 rounded-full text-sm font-semibold ${priorityBadgeColors[announcement.priority]}`}
-        >
-          {announcement.priority.charAt(0).toUpperCase() +
-            announcement.priority.slice(1)}
-        </span>
       </div>
       <p className="text-sm text-gray-500 mb-4">📅 {announcement.date}</p>
       <p className="text-gray-700 leading-relaxed">{announcement.content}</p>

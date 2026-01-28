@@ -12,24 +12,40 @@ export default function ServiceTimes() {
           <h3 className="text-2xl font-bold text-blue-900 mb-2">
             Sunday Service
           </h3>
-          <p className="text-lg text-gray-700 mb-1">🕙 8:00 AM - 10:00 AM</p>
+          <p className="text-lg text-gray-700 mb-1">
+            🕙 8:00 AM - 10:00 AM every Sunday
+          </p>
           <p className="text-gray-600">Main Sanctuary</p>
         </div>
-
+        <div className="text-center p-6 bg-blue-50 rounded-lg">
+          <h3 className="text-2xl font-bold text-blue-900 mb-2">
+            Children&apos;s Church
+          </h3>
+          <p className="text-lg text-gray-700 mb-1">🕙 8:30 AM every Sunday</p>
+          <p className="text-gray-600">Downstairs Sanctuary</p>
+        </div>
         <div className="text-center p-6 bg-blue-50 rounded-lg">
           <h3 className="text-2xl font-bold text-blue-900 mb-2">
             Breakthrough Monday
           </h3>
-          <p className="text-lg text-gray-700 mb-1">🕖 7:00 PM</p>
+          <p className="text-lg text-gray-700 mb-1">🕖 7:00 PM every Monday</p>
           <p className="text-gray-600">Main Sanctuary | Live on YouTube</p>
         </div>
-
         <div className="text-center p-6 bg-blue-50 rounded-lg">
           <h3 className="text-2xl font-bold text-blue-900 mb-2">
-            Prayer Meeting
+            Monthly Prayer Meeting
           </h3>
-          <p className="text-lg text-gray-700 mb-1">🕐 6:30 PM - 7:00 PM</p>
-          <p className="text-gray-600">Prayer Room</p>
+          <p className="text-lg text-gray-700 mb-1">
+            🕐 7:00 PM every last Wednesday and Thursday of the month
+          </p>
+          <p className="text-gray-600">Main Sanctuary | Live on YouTube</p>
+        </div>
+        <div className="text-center p-6 bg-blue-50 rounded-lg">
+          <h3 className="text-2xl font-bold text-blue-900 mb-2">
+            Baptism and Mentorship Class
+          </h3>
+          <p className="text-lg text-gray-700 mb-1">🕐 5:00 PM every Sunday</p>
+          <p className="text-gray-600">Main Sanctuary | Live on YouTube</p>
         </div>
       </div>
 
