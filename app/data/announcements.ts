@@ -36,36 +36,12 @@ export const announcements: Announcement[] = [
     priority: "high",
   },
   {
-    id: 2,
-    title: "Youth Carnival Camp 2026",
-    date: "February 16, 2026",
-    content:
-      "Join us for a fun-filled youth carnival camp!",
-    priority: "high",
-  },
-  {
-    id: 3,
-    title: "Valentines Day Dinner",
-    date: "February 14, 2026",
-    content:
-      "Celebrate love and fellowship at our Valentine's Dinner.",
-    priority: "high",
-  },
-  {
     id: 4,
     title: "Prayer and Fasting on every Wednesday",
     date: "2026",
     content:
       "Join us for prayer and fasting on every Wednesday.",
     priority: "medium",
-  },
-  {
-    id: 5,
-    title: "Baptism Day",
-    date: "March 15th, 2026",
-    content:
-      "I say to you that likewise there will be more joy in heaven over one sinner who repents than over ninety-nine just persons who need no repentance. - Luke 15:7. If you feel led to take this important step in your walk with God, please contact us.",
-    priority: "low",
   },
   {
     id: 6,
