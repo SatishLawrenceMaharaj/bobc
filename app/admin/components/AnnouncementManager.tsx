@@ -13,10 +13,14 @@ interface Announcement {
 export default function AnnouncementManager() {
   const [announcements, setAnnouncements] = useState<Announcement[]>([]);
   const [loading, setLoading] = useState(true);
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<{
+    title: string;
+    content: string;
+    priority: "low" | "medium" | "high";
+  }>({
     title: "",
     content: "",
-    priority: "medium" as const,
+    priority: "medium",
   });
   const [editingId, setEditingId] = useState<number | null>(null);
 
@@ -42,9 +46,7 @@ export default function AnnouncementManager() {
 
     try {
       const method = editingId ? "PUT" : "POST";
-      const body = editingId
-        ? { ...formData, id: editingId }
-        : formData;
+      const body = editingId ? { ...formData, id: editingId } : formData;
 
       const response = await fetch("/api/announcements", {
         method,
@@ -165,13 +167,15 @@ export default function AnnouncementManager() {
           <div key={ann.id} className="p-4 border rounded-lg">
             <div className="flex justify-between items-start mb-2">
               <h3 className="text-lg font-semibold">{ann.title}</h3>
-              <span className={`px-2 py-1 rounded text-white text-sm ${
-                ann.priority === "high"
-                  ? "bg-red-500"
-                  : ann.priority === "medium"
-                  ? "bg-yellow-500"
-                  : "bg-green-500"
-              }`}>
+              <span
+                className={`px-2 py-1 rounded text-white text-sm ${
+                  ann.priority === "high"
+                    ? "bg-red-500"
+                    : ann.priority === "medium"
+                      ? "bg-yellow-500"
+                      : "bg-green-500"
+                }`}
+              >
                 {ann.priority}
               </span>
             </div>
