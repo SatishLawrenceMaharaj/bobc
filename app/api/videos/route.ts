@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    await ensureYoutubeVideosSchema(pool);
+    await ensureYoutubeVideosSchema();
 
     const result = await pool.query(`
       select

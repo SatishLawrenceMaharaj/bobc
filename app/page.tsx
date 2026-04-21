@@ -16,9 +16,9 @@ export default async function Home() {
   ]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-7xl mx-auto px-4 py-8">
+      <main className="max-w-7xl mx-auto px-4 py-12 md:py-16">
         <AnnouncementsSection announcements={announcements} />
         <ServiceTimes
           serviceTimes={serviceTimes}
