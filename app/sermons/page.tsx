@@ -6,12 +6,12 @@ import Footer from "../components/Footer";
 
 export default function SermonsPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-7xl mx-auto px-4 py-8">
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Sermon Presentations</h1>
-          <p className="text-lg text-gray-600">
+      <main className="max-w-7xl mx-auto px-4 py-12 md:py-16">
+        <div className="mb-16 md:mb-20">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 tracking-tight">Sermon Presentations</h1>
+          <p className="text-xl text-gray-600 max-w-2xl leading-relaxed">
             Download PowerPoint presentations from our Sunday services and ministry events
           </p>
         </div>
