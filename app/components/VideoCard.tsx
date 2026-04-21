@@ -12,7 +12,7 @@ interface Video {
 
 export default function VideoCard({ video }: { video: Video }) {
   const [imgSrc, setImgSrc] = useState(
-    video.thumbnail || "/images/video-placeholder.jpg"
+    video.thumbnail || "/public/video-placeholder.png"
   );
 
   return (
@@ -29,7 +29,7 @@ export default function VideoCard({ video }: { video: Video }) {
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover group-hover:opacity-75 transition"
-          onError={() => setImgSrc("/images/video-placeholder.jpg")}
+          onError={() => setImgSrc("/public/video-placeholder.png")}
         />
       </div>
 
