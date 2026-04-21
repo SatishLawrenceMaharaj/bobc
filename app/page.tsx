@@ -2,14 +2,28 @@ import Header from "./components/Header";
 import AnnouncementsSection from "./components/AnnouncementsSection";
 import ServiceTimes from "./components/ServiceTimes";
 import Footer from "./components/Footer";
+import {
+  getAnnouncements,
+  getContactInfo,
+  getServiceTimes,
+} from "@/lib/queries";
 
-export default function Home() {
+export default async function Home() {
+  const [announcements, serviceTimes, contactInfo] = await Promise.all([
+    getAnnouncements(),
+    getServiceTimes(),
+    getContactInfo(),
+  ]);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
       <main className="max-w-7xl mx-auto px-4 py-8">
-        <AnnouncementsSection />
-        <ServiceTimes />
+        <AnnouncementsSection announcements={announcements} />
+        <ServiceTimes
+          serviceTimes={serviceTimes}
+          contactInfo={contactInfo}
+        />
       </main>
       <Footer />
     </div>
